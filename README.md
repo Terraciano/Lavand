@@ -1,22 +1,14 @@
 <a href="https://qrGPT.io">
-  <img alt="QrGPT – Generate beautiful AI QR Codes in seconds." src="/public/og-image.png">
-  <h1 align="center">qrGPT</h1>
+  <h1 align="center">Lavand 🪄</h1>
 </a>
 
 <p align="center">
-  Generate beautiful AI QR Codes in seconds. Powered by Vercel and Replicate.
+  Generate beautiful AI Illusions in seconds. Powered by Vercel and Replicate. - Based on qrGPT
 </p>
 
-<p align="center">
-  <a href="https://codeium.com?repo_name=nutlope%2Fqrgpt">
-    <img src="https://codeium.com/badges/main" alt="Codium" />
-  </a>
-</p>
 
 <p align="center">
   <a href="#tech-stack"><strong>Tech Stack</strong></a> ·
-  <a href="#deploy-your-own"><strong>Deploy Your Own</strong></a> ·
-  <a href="#authors"><strong>Authors</strong></a> ·
   <a href="#credits"><strong>Credits</strong></a>
 </p>
 <br/>
@@ -28,26 +20,13 @@
 - [Vercel Blob](https://vercel.com/storage/blob) for image storage
 - [Vercel KV](https://vercel.com/storage/kv) for redis storage and rate limiting
 - [Shadcn UI](https://ui.shadcn.com/) for the component library
+- [Mantine UI](https://mantine.dev/) for the Slider & File Input components
 
-## Deploy Your Own
-
-You can deploy this template to Vercel with the button below:
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.fyi/qrGPT)
-
-Note that you'll need to:
-
-- Set up [Replicate](https://replicate.com)
-- Set up [Vercel KV](https://vercel.com/docs/storage/vercel-kv/quickstart)
-- Set up [Vercel Blob](https://vercel.com/docs/storage/vercel-blob/quickstart)
-
-## Authors
-
-- Hassan El Mghari ([@nutlope](https://twitter.com/nutlope))
-- Kevin Hou ([@kevinhou22](https://twitter.com/kevinhou22))
 
 ## Credits
 
-- [Codeium](https://codeium.com?repo_name=nutlope%2Fqrgpt) and [v0](https://v0.dev/) for quick prototyping and AI autocomplete
+-  [qrGPT](https://qrgpt.io/)
+-  - Hassan El Mghari ([@nutlope](https://twitter.com/nutlope))
+-  - Kevin Hou ([@kevinhou22](https://twitter.com/kevinhou22))
 - [Spirals](https://spirals.vercel.app/) for great code patterns and some code (ty Steven)
-- [Lim Zi Yang](https://github.com/ZYLIM0702) for the original AI model
+- [Andreas Jansson](https://github.com/andreasjansson) for the original AI model

@@ -9,6 +9,7 @@ async function getAllKv(id: string) {
     image?: string;
     website_url?: string;
     model_latency?: string;
+    conditioningScale: number;
   }>(id);
 
   return data;
@@ -26,9 +27,9 @@ export async function generateMetadata({
     return;
   }
 
-  const title = `QrGPT: ${data.prompt}`;
-  const description = `A QR code generated from qrGPT.io linking to: ${data.website_url}`;
-  const image = data.image || 'https://qrGPT.io/og-image.png';
+  const title = `Lavand: ${data.prompt}`;
+  const description = `An AI Illusion generated from Lavand}`;
+  const image = data.image || 'https://lavand.vercel.app/og-image.png';
 
   return {
     title,
@@ -70,6 +71,7 @@ export default async function Results({
       redirectUrl={data.website_url}
       modelLatency={Number(data.model_latency)}
       id={params.id}
+      conditioningScale={data.conditioningScale}
     />
   );
 }

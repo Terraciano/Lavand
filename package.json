@@ -1,5 +1,5 @@
 {
-  "name": "qr-gpt",
+  "name": "lavand",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,7 +10,10 @@
     "format": "prettier --write ."
   },
   "dependencies": {
+    "@emotion/react": "^11.11.1",
     "@hookform/resolvers": "^3.3.1",
+    "@mantine/core": "^6.0.2",
+    "@mantine/hooks": "^7.0.0",
     "@radix-ui/react-label": "^2.0.2",
     "@radix-ui/react-slot": "^1.0.2",
     "@tailwindcss/forms": "^0.5.6",

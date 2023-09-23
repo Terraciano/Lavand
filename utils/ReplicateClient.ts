@@ -11,28 +11,27 @@ export class ReplicateClient {
     });
   }
 
-  /**
-   * Generate a QR code.
-   */
   generateQrCode = async (
     request: QrCodeControlNetRequest,
   ): Promise<string> => {
     const output = (await this.replicate.run(
-      'zylim0702/qr_code_controlnet:628e604e13cf63d8ec58bd4d238474e8986b054bc5e1326e50995fdbc851c557',
+      'andreasjansson/illusion:75d51a73fce3c00de31ed9ab4358c73e8fc0f627dc8ce975818e653317cb919b',
       {
         input: {
-          url: request.url,
+          qr_code_content: '',
+          image: request.image,
           prompt: request.prompt,
-          qr_conditioning_scale: request.qr_conditioning_scale,
-          num_inference_steps: request.num_inference_steps,
-          guidance_scale: request.guidance_scale,
+          num_inference_steps: 40,
+          guidance_scale: 7.5,
+          seed: -1,
           negative_prompt: request.negative_prompt,
+          controlnet_conditioning_scale: request.conditioningScale,
         },
       },
     )) as QrCodeControlNetResponse;
 
     if (!output) {
-      throw new Error('Failed to generate QR code');
+      throw new Error('Failed to generate image');
     }
 
     return output[0];

@@ -7,18 +7,18 @@ import { Analytics } from '@vercel/analytics/react';
 
 const inter = Inter({ subsets: ['latin'] });
 
-let title = 'QrGPT - QR Code Generator';
-let description = 'Generate your AI QR Code in seconds';
-let url = 'https://www.qrgpt.io';
-let ogimage = 'https://www.qrgpt.io/og-image.png';
-let sitename = 'qrGPT.io';
+let title = 'Lavand - AI Illustion Generator';
+let description = 'Generate AI Illusions in seconds';
+let url = 'https://lavand.vercel.app';
+let ogimage = 'https://lavand.vercel.app/og-image.webp';
+let sitename = 'lavand.vercel.app';
 
 export const metadata: Metadata = {
-  metadataBase: new URL(url),
+  metadataBase: new URL('https://lavand.vercel.app'),
   title,
   description,
   icons: {
-    icon: '/favicon.ico',
+    icon: '🃏',
   },
   openGraph: {
     images: [ogimage],
@@ -44,6 +44,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <link
+          rel="icon"
+          href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎩</text></svg>"
+        />
+      </head>
       <body className={inter.className}>
         <Navbar />
         <main>{children}</main>

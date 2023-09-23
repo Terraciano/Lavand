@@ -42,8 +42,8 @@ const Navbar = () => {
         <div className="custom-screen items-center mx-auto md:flex">
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <Link href="/" className="flex items-center gap-3">
-              <Image src="/box.svg" alt="logo" width={30} height={30} />
-              <div className="font-bold text-lg">QrGPT</div>
+              <div className="font-bold text-4xl">🎩</div>
+              <div className="font-bold text-lg">Lavand</div>
             </Link>
             <div className="md:hidden">
               <button
@@ -104,7 +104,7 @@ const Navbar = () => {
                   href="/start"
                   className="block font-medium text-sm text-white bg-gray-800 hover:bg-gray-600 active:bg-gray-900 md:inline"
                 >
-                  Generate your QR Code
+                  Generate your Illusion
                 </NavLink>
               </li>
             </ul>
