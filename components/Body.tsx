@@ -75,7 +75,7 @@ const Body = ({
   });
 
   useEffect(() => {
-    if (imageUrl && modelLatency && id && prompt) {
+    if (imageUrl && modelLatency && id && prompt && conditioningScale) {
       setResponse({
         image_url: imageUrl,
         model_latency_ms: modelLatency,
