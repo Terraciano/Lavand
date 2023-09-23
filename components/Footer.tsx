@@ -22,6 +22,7 @@ const Footer = () => (
             href="https://twitter.com/kevinhou22"
             className="hover:underline transition"
           >
+            {/* eslint-disable-next-line react/no-unescaped-entities */}
             Kevin's
           </a>{' '}
           <a href="https://qrgpt.io" className="hover:underline transition">
