@@ -7,10 +7,10 @@ import { Analytics } from '@vercel/analytics/react';
 
 const inter = Inter({ subsets: ['latin'] });
 
-let title = 'Lavand - AI Illustion Generator';
+let title = 'Lavand - AI Illusion Generator';
 let description = 'Generate AI Illusions in seconds';
 let url = 'https://lavand.vercel.app';
-let ogimage = 'https://lavand.vercel.app/og-image.webp';
+let ogimage = 'https://lavand.vercel.app/og-image.png';
 let sitename = 'lavand.vercel.app';
 
 export const metadata: Metadata = {
