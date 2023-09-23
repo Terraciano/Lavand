@@ -55,7 +55,7 @@ const Body = ({
   redirectUrl?: string;
   modelLatency?: number;
   id?: string;
-  conditioningScale: number;
+  conditioningScale?: number;
 }) => {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<Error | null>(null);
