@@ -61,7 +61,7 @@ export async function POST(request: NextRequest) {
 
   let imageUrl = await replicateClient.generateQrCode({
     qr_code_content: '',
-    conditioningScale: parseInt(conditioningScale) / 25,
+    conditioningScale: parseInt(conditioningScale) / 50,
     image: uri,
     prompt: prompt,
     num_inference_steps: 30,
