@@ -1,4 +1,4 @@
-<a href="https://qrGPT.io">
+<a href="https://lavand.vercel.app">
   <h1 align="center">Lavand 🪄</h1>
 </a>
 
